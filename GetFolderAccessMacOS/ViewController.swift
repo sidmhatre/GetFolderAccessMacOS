@@ -10,18 +10,35 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var pathLabel: NSTextField!
+    var bookmarks = [URL: Data]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.initialize()
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
+    
+    func initialize() {
+        loadBookmarks()
+        let path = getBookmarkPath()
+        bookmarks = NSKeyedUnarchiver.unarchiveObject(withFile: path) as! [URL: Data]
+        
+        var paths : String = ""
+        
+        for bookmark in bookmarks
+        {
+            paths = "\(bookmark.key)\n"
         }
+        self.pathLabel.stringValue = paths
+
     }
 
-
+    @IBAction func selectFolderBtnAction(_ sender: Any) {
+        
+        let selectedURL = openFolderSelection()
+        saveBookmarksData()
+       
+    }
+    
 }
 

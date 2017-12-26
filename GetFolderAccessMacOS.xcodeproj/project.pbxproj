@@ -11,6 +11,7 @@
 		1FD5892B1FEBC432005D715B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD5892A1FEBC432005D715B /* ViewController.swift */; };
 		1FD5892D1FEBC432005D715B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD5892C1FEBC432005D715B /* Assets.xcassets */; };
 		1FD589301FEBC432005D715B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD5892E1FEBC432005D715B /* Main.storyboard */; };
+		1FD589391FEBC5B2005D715B /* Bookmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD589381FEBC5B2005D715B /* Bookmarks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		1FD5892F1FEBC432005D715B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FD589311FEBC432005D715B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FD589321FEBC432005D715B /* GetFolderAccessMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GetFolderAccessMacOS.entitlements; sourceTree = "<group>"; };
+		1FD589381FEBC5B2005D715B /* Bookmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmarks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				1FD589281FEBC432005D715B /* AppDelegate.swift */,
 				1FD5892A1FEBC432005D715B /* ViewController.swift */,
+				1FD589381FEBC5B2005D715B /* Bookmarks.swift */,
 				1FD5892C1FEBC432005D715B /* Assets.xcassets */,
 				1FD5892E1FEBC432005D715B /* Main.storyboard */,
 				1FD589311FEBC432005D715B /* Info.plist */,
@@ -136,6 +139,7 @@
 			files = (
 				1FD5892B1FEBC432005D715B /* ViewController.swift in Sources */,
 				1FD589291FEBC432005D715B /* AppDelegate.swift in Sources */,
+				1FD589391FEBC5B2005D715B /* Bookmarks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
